@@ -13,10 +13,7 @@ function thecomputerchoise() {
     }
     
     return cfinal;
-}
-// functionfor button clicks
-
-
+};
 
 const main = document.querySelector('#main');
 // creating the player div
@@ -51,11 +48,34 @@ computer_title.appendChild(title_computer);
 computer_div.appendChild(computer_title);
 computer_div.style.marginTop = '10px';
 const computer_choise = document.createElement('div');
-// let computer_choise_text = document.createTextNode('the computer choise IS : ' + thecomputerchoise());
+let computer_choise_text = document.createTextNode('the computer choise IS : ' + thecomputerchoise());
 computer_choise.appendChild(computer_choise_text);
 computer_choise.style.marginBottom = '10px';
-
 computer_div.appendChild(computer_choise);
-
 main.appendChild(player_div); 
 main.appendChild(computer_div);
+
+// botton for rock
+function btnrock() {
+    let pfinal;
+    pfinal = 'rock';
+    return pfinal;
+    
+}
+rock.onclick = btnrock;
+// botton for paper
+function btnpaper() {
+    let pfinal;
+    pfinal = 'paper';
+    return pfinal;
+    
+}
+paper.onclick = btnpaper;
+// botton for sisors
+function btnsisors() {
+    let pfinal;
+    pfinal = 'sisors';
+    return pfinal;
+}
+sisors.onclick = btnsisors;
+
