@@ -30,7 +30,12 @@ const title_computer = document.createTextNode('this is the computer area');
 computer_title.appendChild(title_computer);
 computer_div.appendChild(computer_title);
 computer_div.style.marginTop = '10px';
+const computer_choise = document.createElement('div');
+let computer_choise_text = document.createTextNode('this is the computer choise');
+computer_choise.appendChild(computer_choise_text);
+computer_choise.style.marginBottom = '10px';
 
+computer_div.appendChild(computer_choise);
 
 main.appendChild(player_div); 
 main.appendChild(computer_div);
