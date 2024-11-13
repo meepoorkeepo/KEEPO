@@ -1,0 +1,13 @@
+h1,h3{
+    color: aquamarine;
+    text-align: center;
+}
+h3{
+    color: red;
+}
+#player{
+   border: 2px, gray, solid;
+}
+#computer{
+    border: 2px, gray, solid;
+}
