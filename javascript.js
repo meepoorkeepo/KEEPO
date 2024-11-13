@@ -1,3 +1,23 @@
+//function for computer choise
+function thecomputerchoise() {
+    let random_number = Math.random();
+    let cfinal;
+    if (random_number < 1/3) {
+        cfinal = 'rock';
+    }
+    else if(random_number >= 1/3 && random_number <=2/3 ){
+        cfinal = 'paper';
+    }
+    else{
+        cfinal = 'sisors'
+    }
+    
+    return cfinal;
+}
+// functionfor button clicks
+
+
+
 const main = document.querySelector('#main');
 // creating the player div
 const player_div = document.createElement('div');
@@ -31,7 +51,7 @@ computer_title.appendChild(title_computer);
 computer_div.appendChild(computer_title);
 computer_div.style.marginTop = '10px';
 const computer_choise = document.createElement('div');
-let computer_choise_text = document.createTextNode('this is the computer choise');
+// let computer_choise_text = document.createTextNode('the computer choise IS : ' + thecomputerchoise());
 computer_choise.appendChild(computer_choise_text);
 computer_choise.style.marginBottom = '10px';
 
